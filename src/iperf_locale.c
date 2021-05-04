@@ -363,34 +363,34 @@ const char report_bw_udp_sender_header_bidir[] =
 "[ ID][Role] Interval           Transfer     Bitrate         Total Datagrams\n";
 
 const char report_bw_format[] =
-"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec                  %s\n";
+"[%3d]%s %6.6f-%-6.6f sec  %ss  %ss/sec                  %s\n";
 
 const char report_bw_retrans_format[] =
-"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %3u             %s\n";
+"[%3d]%s %6.6f-%-6.6f sec  %ss  %ss/sec  %3u             %s\n";
 
 const char report_bw_retrans_cwnd_format[] =
-"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %3u   %ss       %s\n";
+"[%3d]%s %6.6f-%-6.6f sec  %ss  %ss/sec  %3u   %ss       %s\n";
 
 const char report_bw_udp_format[] =
-"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %5.3f ms  %d/%d (%.2g%%)  %s\n";
+"[%3d]%s %6.6f-%-6.6f sec  %ss  %ss/sec  %5.3f ms  %d/%d (%.2g%%)  %s\n";
 
 const char report_bw_udp_sender_format[] =
-"[%3d]%s %6.2f-%-6.2f sec  %ss  %ss/sec %s %d  %s\n";
+"[%3d]%s %6.6f-%-6.6f sec  %ss  %ss/sec %s %d  %s\n";
 
 const char report_summary[] =
 "Test Complete. Summary Results:\n";
 
 const char report_sum_bw_format[] =
-"[SUM]%s %6.2f-%-6.2f sec  %ss  %ss/sec                  %s\n";
+"[SUM]%s %6.6f-%-6.6f sec  %ss  %ss/sec                  %s\n";
 
 const char report_sum_bw_retrans_format[] =
-"[SUM]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %3d             %s\n";
+"[SUM]%s %6.6f-%-6.6f sec  %ss  %ss/sec  %3d             %s\n";
 
 const char report_sum_bw_udp_format[] =
-"[SUM]%s %6.2f-%-6.2f sec  %ss  %ss/sec  %5.3f ms  %d/%d (%.2g%%)  %s\n";
+"[SUM]%s %6.6f-%-6.6f sec  %ss  %ss/sec  %5.3f ms  %d/%d (%.2g%%)  %s\n";
 
 const char report_sum_bw_udp_sender_format[] =
-"[SUM]%s %6.2f-%-6.2f sec  %ss  %ss/sec %s %d  %s\n";
+"[SUM]%s %6.6f-%-6.6f sec  %ss  %ss/sec %s %d  %s\n";
 
 const char report_omitted[] = "(omitted)";
 
@@ -513,7 +513,7 @@ const char opt_estimate[]=
 "Optimal Estimate\n";
 
 const char report_interval_small[] =
-"WARNING: interval too small, increasing from %3.2f to 0.5 seconds.\n";
+"WARNING: interval too small, increasing from %3.6f to 0.5 seconds.\n";
 
 const char warn_invalid_server_option[] =
 "WARNING: option -%c is not valid for server mode\n";
